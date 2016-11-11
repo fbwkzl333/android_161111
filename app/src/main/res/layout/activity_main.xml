@@ -30,6 +30,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/button4" />
 
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+
     <RatingBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
