@@ -13,7 +13,6 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RatingBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         o1 = (RadioButton) findViewById(R.id.radioButton3);
         o2 = (RadioButton) findViewById(R.id.radioButton4);
+        o1.setChecked(true);
         o1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
+    }/*
     public void onClick00(View v){
         TextView tv1 = (TextView) findViewById(R.id.textView);
         Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
     public void onClick01(View v) {
         CheckBox ch1 = (CheckBox)findViewById(R.id.checkBox);
