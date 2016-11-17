@@ -1,5 +1,6 @@
 # android_161111
-201244003 <br>
+<head> 201244003 </head>
+<body>
 <tr>
 <td>
 <img src='https://github.com/fbwkzl333/android_161111/blob/master/app/pix/Screenshot_1479359210.png' />
@@ -12,9 +13,4 @@
 <img src='https://github.com/fbwkzl333/android_161111/blob/master/app/pix/calin%20toast.png' />
 </td>
 </tr>
-
-
-
-
-
-<br>
+</body>
