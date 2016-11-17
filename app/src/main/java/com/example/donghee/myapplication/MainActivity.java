@@ -48,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
         o1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Selected 'Man'",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"남자입니다",Toast.LENGTH_SHORT).show();
             }
         });
         o2.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Selected 'Woman'",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"여자입니다",Toast.LENGTH_SHORT).show();
             }
         });
 /*
