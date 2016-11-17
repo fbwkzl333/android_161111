@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:onClick="onClick00" />
 
     <Button
         android:layout_width="312dp"
@@ -42,11 +43,12 @@
         android:checked="false"
         android:onClick="onClick01" />
 
-    <LinearLayout
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+<RadioGroup
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
 
         <RadioButton
             android:text="Man"
@@ -59,7 +61,7 @@
             android:layout_width="94dp"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton4"/>
-    </LinearLayout>
+</RadioGroup>
 
     <RatingBar
         android:layout_width="wrap_content"
