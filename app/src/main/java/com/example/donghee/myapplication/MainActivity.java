@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -57,21 +58,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"여자입니다",Toast.LENGTH_SHORT).show();
             }
         });
-/*
-        c1 = (CheckBox) findViewById(R.id.checkBox);
-        c1.setOnClickListener(new OnClickListener() {
+
+        CalendarView cal = (CalendarView) findViewById(R.id.calendarView);
+        cal.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
-            public void onClick(View v) {
-                if(c1.isChecked() == true){
-                    Toast.makeText(getApplicationContext(), "체크 했습니다", Toast.LENGTH_SHORT).show();
-                    layout.setBackgroundColor(Color.rgb(200,218,247));
-                } else {
-                    Toast.makeText(getApplicationContext(), "체크 해제 했습니다", Toast.LENGTH_SHORT).show();
-                    layout.setBackgroundColor(Color.rgb(255,255,255));
-                }
+            public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
+                Toast.makeText(MainActivity.this, "" +year+"/"+(month+1)+"/"+dayOfMonth, Toast.LENGTH_SHORT).show();
             }
         });
-*/
+
     }
     public void onClick00(View v){
         TextView tv1 = (TextView) findViewById(R.id.textView);
